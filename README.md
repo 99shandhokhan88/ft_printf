@@ -63,8 +63,8 @@ Here's an example of how to use the `ft_printf` function:
 
 int main(void)
 {
-    char *name = "John";
-    int age = 30;
+    char *name = "Venelin";
+    int age = 420;
 
     ft_printf("Hello, my name is %s, and I am %d years old.\n", name, age);
 

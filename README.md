@@ -153,7 +153,7 @@ To work on the bonus challenges for the `ft_printf` project, you need the follow
 1. Clone the GitHub repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/ft_printf.git
+   git@github.com:99shandhokhan88/ft_printf.git
    ```
 
 2. Navigate to the project directory:

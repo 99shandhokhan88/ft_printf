@@ -2,22 +2,6 @@
 
 # ft_printf Project Guide
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Project Overview](#project-overview)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-  - [Function Description](#function-description)
-  - [Example Usage](#example-usage)
-- [Customization](#customization)
-- [Advanced Topics](#advanced-topics)
-  - [Format Specifiers](#format-specifiers)
-  - [Memory Management](#memory-management)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Introduction
 
 The `ft_printf` project is a comprehensive exercise in implementing a simplified version of the standard C library's `printf` function in C. This guide provides an overview of the project, its purpose, how to get started, and advanced topics for customization and improvement.
@@ -40,7 +24,7 @@ To work with the `ft_printf` project, you need the following prerequisites:
 1. Clone the GitHub repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/ft_printf.git
+   git@github.com:99shandhokhan88/ft_printf.git
    ```
 
 2. Navigate to the project directory:
@@ -115,83 +99,58 @@ This guide provides a comprehensive overview of the `ft_printf` project, from in
 
 
 
-# ft_printf Bonuses Guide
+# ft_printf Bonuses
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Project Overview](#project-overview)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Bonus Challenges](#bonus-challenges)
-  - [Custom Format Specifiers](#custom-format-specifiers)
-  - [Modifiers](#modifiers)
-  - [Additional Features](#additional-features)
-- [Testing](#testing)
-- [Contributing](#contributing)
-- [License](#license)
+While the basic requirements involve supporting the standard format specifiers like `%s`, `%d`, and `%c`, the bonus part of the project allows you to extend the functionality. Here's a guide and explanation for some common `ft_printf` bonuses:
 
-## Introduction
+### 1. **Handling Additional Format Specifiers:**
 
-The `ft_printf` project's bonus challenges provide an opportunity to extend the functionality of your `ft_printf` implementation by adding custom format specifiers, modifiers, and other advanced features. This guide outlines the bonus challenges and provides guidance on how to approach them.
+   - **Bonus: %b (Binary Format):** Extend `ft_printf` to support the `%b` format specifier, which allows you to print integer values in binary format.
 
-## Project Overview
+   - **Bonus: %o (Octal Format):** Add support for the `%o` format specifier, which prints integers in octal (base 8) format.
 
-The `ft_printf` project is an exercise in implementing a simplified version of the standard C library's `printf` function in C. Bonuses involve adding custom features and format specifiers beyond the project's initial requirements.
+   - **Bonus: %x and %X (Hexadecimal Format):** Implement `%x` and `%X` to print integers in lowercase and uppercase hexadecimal format, respectively.
 
-## Getting Started
+### 2. **Handling Additional Flags:**
 
-### Prerequisites
+   - **Bonus: '#' Flag:** Implement the `#` flag for various format specifiers to control the output format. For example, with `%#x`, the output could include a "0x" prefix for hexadecimal numbers.
 
-To work on the bonus challenges for the `ft_printf` project, you need the following prerequisites:
+   - **Bonus: ' ' (Space) Flag:** Add support for the space flag, which inserts a space character before positive numbers to align them with negative numbers.
 
-- A Unix-like operating system (Linux, macOS, or similar).
-- A C compiler (e.g., GCC).
+### 3. **Handling Length Modifiers:**
 
-### Installation
+   - **Bonus: hh, h, l, and ll Length Modifiers:** Extend `ft_printf` to support these length modifiers for integer specifiers. For example, `%hd` and `%lld` for short and long long integers.
 
-1. Clone the GitHub repository to your local machine:
+### 4. **Handling Floating-Point Numbers:**
 
-   ```bash
-   git@github.com:99shandhokhan88/ft_printf.git
-   ```
+   - **Bonus: %f Format Specifier:** Implement support for floating-point numbers using the `%f` format specifier. You may need to handle precision, rounding, and exponent notation.
 
-2. Navigate to the project directory:
+### 5. **Handling Additional Specifiers:**
 
-   ```bash
-   cd ft_printf
-   ```
+   - **Bonus: %p (Pointer Format):** Add support for the `%p` format specifier to print memory addresses.
 
-3. Compile the project:
+   - **Bonus: %r (Non-printable Characters):** Implement a custom format specifier `%r` that can print non-printable characters as escape sequences (e.g., newline as `\n`).
 
-   ```bash
-   make
-   ```
+### 6. **Color and Styling:**
 
-## Bonus Challenges
+   - **Bonus: Color Codes:** Allow the use of color codes in the format string, which can be used to change text color, background color, or apply other styling effects to the printed text.
 
-### Custom Format Specifiers
+### 7. **Dynamic Width and Precision:**
 
-Consider adding custom format specifiers to support additional data types or formatting options. For example, you can add specifiers for handling dates, binary data, or custom data structures.
+   - **Bonus: * (Dynamic Width and Precision):** Extend `ft_printf` to support dynamic width and precision using the `*` specifier. For example, `%*.*f` could allow you to specify width and precision as arguments.
 
-### Modifiers
+### 8. **Additional Error Handling:**
 
-Implement modifiers that modify the behavior of existing format specifiers. For instance, you can support width and precision modifiers for numeric types or alignment modifiers for strings.
+   - **Bonus: Improved Error Handling:** Enhance error handling by returning meaningful error codes or messages when unexpected format strings or arguments are encountered.
 
-### Additional Features
+### 9. **Performance Optimization:**
 
-Explore advanced features, such as colored output, positional arguments, or support for internationalization (i18n). These features can enhance the usability and versatility of your `ft_printf` implementation.
+   - **Bonus: Performance Improvements:** Optimize your `ft_printf` implementation for speed and memory usage. Consider ways to reduce the number of function calls or memory allocations.
 
-## Testing
+### 10. **Documentation and Testing:**
 
-Ensure that your bonuses are well-tested. Write test cases that cover various scenarios and edge cases to verify the correctness and robustness of your extended `ft_printf` implementation.
+   - **Bonus: Comprehensive Documentation:** Document your `ft_printf` implementation thoroughly, including how to use the new format specifiers and flags.
 
-## Contributing
+   - **Bonus: Rigorous Testing:** Create a suite of test cases to ensure that your extended `ft_printf` handles all the new features correctly and doesn't introduce regressions in existing functionality.
 
-Contributions to the `ft_printf` project, including bonuses, are welcome. Feel free to open issues, suggest improvements, or submit pull requests for new features and format specifiers.
-
-## License
-
-This project is licensed under the MIT License.
-
-This guide outlines the bonus challenges for the `ft_printf` project, providing directions on how to implement additional functionality and features beyond the project's initial requirements. Adapt it for your repository's README file and encourage contributors to explore and extend the capabilities of your `ft_printf` implementation.
+Remember that the exact requirements for the bonus part of the `ft_printf` project may vary depending on your course or assignment guidelines. Always check the specific requirements provided to you. Additionally, make sure to maintain good coding practices, readability, and efficiency throughout your project.
